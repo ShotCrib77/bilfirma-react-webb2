@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --mainBlue: #003366;
+  --hoverBlue: #6699CC; 
+  --textColor: #333333;
+  --mainBackground: #F0F0F0;
+  --secondaryTextColor: #F5F5F5;
+}
+
+.welcome-section {
+  width: 100%;
+  background-color: var(--mainBackground);
+  background-image: url(../images/Screenshot\ 2024-10-14\ 133210.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 699/323;
+  overflow: hidden;
+}
+
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--textColor);
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: 600;
+}
