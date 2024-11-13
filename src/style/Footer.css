@@ -1,0 +1,43 @@
+:root {
+  --footerBackground: var(--navBackground);
+  --footerHoverBlue: var(--navHoverBlue); 
+  --footerTextColor: var(--navTextColor);
+}
+
+footer {
+  background-color: var(--footerBackground);
+  color: var(--footerTextColor);
+  display: flex;
+  justify-content: center;
+  padding: 7rem 0;
+}
+
+.footer-container {
+  display: inline-block;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer h1 {
+  font-size: 3rem;
+}
+
+footer hr {
+  margin: 1.75rem 0;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacts i {
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+

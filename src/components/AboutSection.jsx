@@ -1,18 +1,17 @@
 import employeeImage from "../images/employee.png"
 import carIcon from "../images/CarIcon.png"
-import "../style/main.css"
-import "../style/OurPersonnel.css"
+import "../style/AboutSection.css"
 
 export default function AboutSection() {
   return (
-    <>
+    <section className="we-are-bilfirma">
       <section className="about-section">
         <h1>Vi är Bilfirma</h1>
         <div className="about-us">
           <div className="about-us-container">
 
             <div className="about-us-img">
-              <img src={carIcon}></img>
+              <img src={carIcon}/>
             </div>
             
             <div className="about-us-text">
@@ -29,7 +28,9 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="our-personnel-info-container">
-          <img src={employeeImage}></img>
+          <div className="about-us-img">
+            <img src={employeeImage}/>
+          </div>
           <div className="employee-text">
             <h2>Vår personal</h2>
             <p>
@@ -41,7 +42,8 @@ export default function AboutSection() {
             </p> {/*Också definitivt inte chat-gpt*/}
           </div>
         </div>
+        <span className="go-to-page-button">Se hela vårt team</span>
       </section>
-    </>
+    </section>
   );
 };

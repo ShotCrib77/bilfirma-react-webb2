@@ -1,0 +1,64 @@
+:root {
+  --sliderColor: var(--mainBlue);
+  --sliderButtonColor: var(--textColor);
+  --rangeSliderBackgroundColor: #8a8a8a;
+}
+
+.double-slider-box {
+  padding: 1rem 0;
+  max-width: 500px;
+}
+
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 0.35rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  background-color: var(--rangeSliderBackgroundColor);
+}
+
+.slider-track {
+  height: 100%;
+  position: absolute;
+  background-color: var(--sliderColor);
+}
+
+.range-slider input {
+  position: absolute;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  appearance: none;
+}
+
+/* "knapparna" ("thumb") för slidern som reglerar dens pris/år o.s.v. */
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 4px solid var(--sliderButtonColor);
+  background: var(--sliderButtonColor);
+  pointer-events: auto;
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.input-box {
+  display: flex;
+}
+
+.max-box {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.min-box {
+  width: 50%;
+}

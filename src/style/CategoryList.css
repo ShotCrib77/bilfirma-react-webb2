@@ -1,0 +1,28 @@
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.checkbox-item input {
+  margin-right: 8px;
+}
+
+.checkbox-container span {
+  cursor: pointer;
+}
+
+.search-cars {
+  all: unset;
+  padding: 0.85rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5rem;
+  background-color: var(--mainBlue);
+  color: var(--secondaryTextColor)
+}

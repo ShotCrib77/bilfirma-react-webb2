@@ -1,0 +1,53 @@
+.welcome-section {
+  position: relative;
+  width: 100%;
+}
+
+.welcome-img {
+  color: var(--transparent-color);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 64rem) {
+  .welcome-img {
+    aspect-ratio: 21/9;
+  }
+}
+
+.bilfirma-slogan-br {
+  max-width: 40%;
+  position: absolute;
+  bottom: 5rem;
+  right: 3rem;
+  font-size: 1.75rem;
+  color: var(--textColor);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.bilfirma-slogan-br h2 {
+  font-size: 1.75rem;
+}
+
+.bilfirma-slogan-br h3 {
+  white-space: nowrap;
+  font-size: clamp(0.8rem, 3vw, 2rem);
+}
+
+@media (max-width: 768px) {
+  .bilfirma-slogan-br {
+    width: 80%;
+    top: 5rem;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    text-align: center;
+  }
+}

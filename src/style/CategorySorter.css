@@ -1,0 +1,12 @@
+.category-sorter-section {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: rgba(245, 245, 220, 0.25);
+}
+
+.category-sorter-section h1 {
+  font-size: 1.75rem;
+}

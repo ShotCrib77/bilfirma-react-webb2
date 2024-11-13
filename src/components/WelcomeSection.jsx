@@ -1,9 +1,9 @@
-import "../style/main.css"
+import "../style/WelcomeSection.css"
 
 export default function WelcomeSection() {
   return(
     <section className="welcome-section">
-      <picture> {/*Webbläsaren kommer att kolla alla sources. Ifall webbläsaren är gammal och inte kan använda "source" eller "picture" taggar, så kommer img srcset användas som fallback.*/}
+      <picture> {/*Webbläsaren kommer att kolla alla sources. Ifall webbläsaren är gammal och inte kan använda "source" eller "picture" taggar, så kommer img srcset användas som "fallback".*/}
         <source 
           srcSet="https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blt84af0b0f4c7ad4f2/66d7e4dabe0a562a6c9cf24e/xc90-phev-hero-21x9-desktop.jpg?branch=prod_alias&amp;auto=webp&amp;iar=0&amp;w=640&amp;imdensity=1 640w, 
           https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blt84af0b0f4c7ad4f2/66d7e4dabe0a562a6c9cf24e/xc90-phev-hero-21x9-desktop.jpg?branch=prod_alias&amp;auto=webp&amp;iar=0&amp;w=750&amp;imdensity=1 750w, c
