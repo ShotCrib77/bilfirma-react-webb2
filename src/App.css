@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --mainBlue: #003366;
+  --hoverBlue: #6699CC; 
+  --textColor: #333333;
+  --mainBackground: #F0F0F0;
+  --secondaryTextColor: #F5F5F5;
+  --transparent-color: #ffffff00;
+}
+
+.cars-preview-section {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--mainBlue);
+  color: var(--secondaryTextColor);
+}
+
+.cars-preview-container {
+  width: 80%;
+}
+
+.cars-preview {
+  display:flex;
+  justify-content:  center;
+  flex-wrap: wrap;
+}
+
+.cars-preview-section h1 {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.view-cars-button {
+  font-size: 1.85em;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+@media (max-width:480px){
+  .cars-preview-container {
+    width: 95%;
+  }
+}
