@@ -1,0 +1,19 @@
+.our-personell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 5rem 0;
+}
+
+.employee-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .employee-list {
+    width: 95%
+  }
+}

@@ -7,10 +7,12 @@ import Footer from './components/Footer';
 import OurCars from './components/OurCarsPage';
 import OurPersonell from './components/OurPersonell';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
        <Route

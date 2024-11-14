@@ -16,11 +16,6 @@
   align-items: center;
 }
 
-.page-header {
-  font-size: 2.25rem;
-  margin-top: 2rem;
-}
-
 .show-category-sorter {
   all: unset;
   cursor: pointer;

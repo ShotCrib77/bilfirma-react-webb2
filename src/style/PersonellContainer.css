@@ -1,0 +1,40 @@
+.personell-container {
+  width: 25rem;
+  background-color: var(--mainBlue);
+  margin: 2rem 1.5rem;
+  border-radius: 10rem;
+  padding: 1rem;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+.employee-image-container {
+  margin: 1rem 0;
+  width: 75%;
+  max-width: 175px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.personell-container img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+figcaption {
+  color: var(--secondaryTextColor);
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 480px) {
+  .personell-container {
+    padding: 0.5rem;
+  }
+  figcaption {
+    font-size: 90%;
+  }
+}
