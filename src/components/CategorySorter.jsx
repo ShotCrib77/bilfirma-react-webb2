@@ -2,6 +2,7 @@ import DoubleSlider from "./DoubleSlider";
 import CategoryList from "./CategoryList";
 import "../style/CategorySorter.css"
 
+{/* Bästa delen av koden */}
 
 export default function CategorySorter() {
   return(

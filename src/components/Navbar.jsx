@@ -6,7 +6,7 @@ import "../style/Navbar.css";
 
 export default function Navar() {
 
-  const navRef = useRef();
+  const navRef = useRef(null);
 
   const showNavbar = () => {
     navRef.current.classList.toggle("mobile-nav")

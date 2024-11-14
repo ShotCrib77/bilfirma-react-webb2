@@ -10,3 +10,49 @@
   margin: 0 0 8rem 4rem;
 }
 
+.car-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header {
+  font-size: 2.25rem;
+  margin-top: 2rem;
+}
+
+.show-category-sorter {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--sorterColor);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .our-cars {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cars-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .category-sorter-container {
+    width: 100%;
+  }
+  
+  .cars-container .car-container {
+    margin: 2rem;
+  }
+  
+  .car-section {
+    margin: auto;
+  }
+}
