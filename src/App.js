@@ -4,17 +4,40 @@ import WelcomeSection from './components/WelcomeSection';
 import AboutSection from './components/AboutSection';
 import CarSection from './components/CarSection';
 import Footer from './components/Footer';
-import CategorySorter from './components/CategorySorter';
+import OurCars from './components/OurCarsPage';
+import OurPersonell from './components/OurPersonell';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Navbar />
-      <WelcomeSection />
-      <AboutSection />
-      <CarSection />
+      <Routes>
+       <Route
+        path = "/"
+        element = {
+          <>
+            <WelcomeSection />
+            <AboutSection />
+            <CarSection />
+          </>
+        }
+        />
+        <Route
+          path = "/bilar"
+          element = {
+            <OurCars />
+          }
+        />
+        <Route
+          path = "/personal"
+          element = {
+            <OurPersonell />
+          }
+        />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

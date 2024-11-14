@@ -44,7 +44,7 @@ export default function CarContainer({ imageSrc, brand, model, year, price, tran
           {/*Milage (swedish "mil")*/}
           <div>
             <span>
-              Mil tal: <b>{milage}</b>
+              Miltal: <b>{milage}</b>
             </span>
           </div>
         </section>

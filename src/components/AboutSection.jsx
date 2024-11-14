@@ -1,6 +1,7 @@
 import employeeImage from "../images/employee.png"
 import carIcon from "../images/CarIcon.png"
 import "../style/AboutSection.css"
+import { Link } from "react-router-dom"
 
 export default function AboutSection() {
   return (
@@ -42,7 +43,7 @@ export default function AboutSection() {
             </p> {/*Också definitivt inte chat-gpt*/}
           </div>
         </div>
-        <span className="go-to-page-button">Se hela vårt team</span>
+        <Link className="go-to-page-button" to="/personal">Se hela vårt team</Link>
       </section>
     </section>
   );

@@ -1,8 +1,11 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import "../style/Navbar.css";
 
+
 export default function Navar() {
+
   const navRef = useRef();
 
   const showNavbar = () => {
@@ -13,9 +16,9 @@ export default function Navar() {
     <header> 
       <h1>Bilfirma</h1>
       <nav ref={navRef}>
-        <a href="/#">Hem</a>
-        <a href="/#">Våra bilar</a>
-        <a href="/#">Vår personal</a>
+        <Link to="/">Hem</Link>
+        <Link to="/bilar">Våra bilar</Link>
+        <Link to="/personal">Vår personal</Link>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}> <FaTimes/> </button>
       </nav>
       <button className="nav-btn" onClick={showNavbar}>

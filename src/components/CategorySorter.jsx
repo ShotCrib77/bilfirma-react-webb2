@@ -7,6 +7,7 @@ export default function CategorySorter() {
   return(
     <section className="category-sorter-section">
       <h1><strong>Filter</strong></h1>
+      <hr/>
       <div>
         <h2><strong>Märken</strong></h2>
         <CategoryList itemArray = {[

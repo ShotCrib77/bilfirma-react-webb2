@@ -1,0 +1,12 @@
+.our-cars {
+  display: flex;
+}
+
+.cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 0 8rem 4rem;
+}
+
